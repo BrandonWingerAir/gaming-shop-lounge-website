@@ -1,0 +1,60 @@
+* {
+    color: white;
+}
+
+header {
+    background: 
+        linear-gradient(
+                rgba(0, 0, 0, 0.85), 
+                rgba(0, 0, 0, 0.85)
+                ),
+        url('images/gaming-pc-cafe.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    padding-top: 71px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+h1 {
+    display: inline-block;
+    padding-left: .5rem;
+}
+
+ul {
+    display: inline-block;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 24px;
+}
+
+header section {
+    align-self: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+h2:last-of-type {
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+header span {
+    margin: 0 11px;
+}
