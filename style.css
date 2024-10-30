@@ -35,15 +35,6 @@ nav > div {
     display: inline-block;
 }
 
-h1 {
-    display: inline-block;
-    padding-left: 23px;
-    padding-right: 16px;
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #76ff03;
-}
-
 ul {
     padding-left: 0;
 }
@@ -58,6 +49,23 @@ nav li:hover {
     color: #fafafa;
 }
 
+.slash {
+    font-size: 1.21rem;
+    font-weight: 200;
+    position: relative;
+    top: 1px;
+}
+
+h1 {
+    display: inline-block;
+    padding-left: 23px;
+    padding-right: 16px;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #76ff03;
+}
+
+/* Hero Section */
 header section {
     align-self: center;
     width: 100%;
@@ -66,6 +74,7 @@ header section {
 h2 {
     font-size: 3.32rem;
     font-weight: 600;
+    margin-bottom: 4px;
 }
 
 h2:last-of-type {
@@ -74,20 +83,21 @@ h2:last-of-type {
 
 h3 {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.174rem;
 }
 
-header span {
+.bullet {
     margin: 0 11px;
 }
 
-.full-cards {
+
+.panels {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 340px;
 }
 
-.full-cards div {
+.panels div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,4 +120,33 @@ footer a {
     color: white;
     font-weight: 600;
     text-decoration: none;
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 428px) {
+    .menu {
+        display: none;
+    }
+
+    .bullet {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        margin: 6px 0;
+        font-size: 1.19rem;
+    }
+
+    h3 span {
+        display: none;
+    }
+
+    .panels {
+        grid-template-columns: 1fr;
+        padding: 0 23px;
+    }
 }
