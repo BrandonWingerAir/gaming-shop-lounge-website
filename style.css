@@ -6,23 +6,35 @@ body {
 
 header {
     color: white;
-    background: 
-        linear-gradient(
-                rgba(0, 0, 0, 0.89), 
-                rgba(0, 0, 0, 0.89)
-                ),
-        url('images/gaming-pc-cafe.jpg') no-repeat center center;
-    background-size: cover;
     text-align: center;
     text-transform: uppercase;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
+}
+
+.background {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.background img {
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+    width: 100dvw;
+    height: 100dvh;
 }
 
 nav {
     position: absolute;
     top: 71px;
-    width: 100vw;
+    width: 100dvw;
 }
 
 nav > div {
@@ -43,6 +55,7 @@ nav li {
     display: inline-block;
     padding: 0 24px;
     color: #e0e0e0;
+    font-size: 1.08rem;
 }
 
 nav li:hover {
@@ -67,6 +80,7 @@ h1 {
 
 /* Hero Section */
 header section {
+    position: absolute;
     align-self: center;
     width: 100%;
 }
@@ -95,6 +109,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 340px;
+    position: relative;
 }
 
 .panels div {
